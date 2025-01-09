@@ -74,6 +74,7 @@ def scale_features(X):
     X_scaled = scaler.fit_transform(X)
     return X_scaled
 
+
 def train_logistic_regression(X_train, y_train):
     """
     Trains a Logistic Regression model on the given training data.
@@ -90,6 +91,7 @@ def train_logistic_regression(X_train, y_train):
     print("...Training Logistic Regressor")
     return model
 
+
 def save_model(model, filename='logistic_regression_model.pkl'):
     """
     Saves the trained model to a pickle file.
@@ -101,6 +103,7 @@ def save_model(model, filename='logistic_regression_model.pkl'):
     with open(filename, 'wb') as f:
         pickle.dump(model, f)
     print(f"Model saved as {filename}")
+
 
 def main():
     """
@@ -130,5 +133,9 @@ def main():
     # Step 7: Save the trained model
     save_model(model)
 
+
 if __name__ == "__main__":
     main()
+
+
+
